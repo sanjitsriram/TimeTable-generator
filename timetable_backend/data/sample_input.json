@@ -1,0 +1,56 @@
+{
+  "teachers": [
+    { 
+      "id": 1, 
+      "name": "Alice", 
+      "department": "CSE" 
+    }
+  ],
+  "departments": [
+    {
+      "name": "CSE",
+      "courses": [
+        { 
+          "id": "CSE101", 
+          "name": "DSA", 
+          "duration": 4, 
+          "term": "Sem 3" 
+        }
+      ]
+    }
+  ],
+  "courses": [
+    { 
+      "id": "CSE101", 
+      "name": "DSA", 
+      "duration": 4, 
+      "term": "Sem 3" 
+    }
+  ],
+  "classrooms": [
+    { 
+      "id": 1, 
+      "name": "Room A", 
+      "capacity": 60 
+    }
+  ],
+  "classTimings": {
+    "periods_per_day": 8,
+    "start_time": "08:30", 
+    "end_time": "17:30",
+    "working_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "weekly_hours": 40, 
+    "tea_breaks": [
+      { 
+        "start": "10:30", 
+        "end": "10:45" 
+      }
+    ],
+    "lunch_breaks": [
+      { 
+        "start": "12:30", 
+        "end": "13:00"  
+      }
+    ]
+  }
+}
