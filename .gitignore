@@ -1,0 +1,38 @@
+# === Node.js / React Dependencies ===
+**/node_modules/
+**/.pnp/
+**/.pnp.js
+
+# === Build Output ===
+**/build/
+**/dist/
+**/out/
+
+# === Testing Coverage ===
+**/coverage/
+
+# === Environment Variables ===
+**/.env
+**/.env.local
+**/.env.*.local
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === OS / Editor Stuff ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# === IDEs ===
+.vscode/
+.idea/
+
+# === Misc ===
+*.log
+*.bak
+*.tmp
