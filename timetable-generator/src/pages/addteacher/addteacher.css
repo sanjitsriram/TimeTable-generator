@@ -1,0 +1,247 @@
+/* Global Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+  }
+  
+  /* Layout */
+  .page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fc;
+  }
+  
+  /* Sidebar */
+  .menu-sidebar {
+    width: 250px;
+    background-color: #0b1d51;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+  }
+  
+  .menu-sidebar:hover {
+    width: 280px;
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .site-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .college-title {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #b0b0b0;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  /* Navigation */
+  .menu-links {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 10px;
+    color: #b1b1b1;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(49, 144, 231, 0.15);
+    padding-left: 30px;
+  }
+  
+  .active-link {
+    background-color: #3190e7;
+    color: white;
+    padding-left: 30px;
+    border-left: 4px solid white;
+  }
+  
+  /* Icons */
+  .menu-icon {
+    font-size: 16px;
+  }
+  
+  .menu-arrow {
+    font-size: 18px;
+    color: #fff;
+    margin-left: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-arrow:hover {
+    transform: translateX(5px);
+  }
+  
+  .menu-arrow:before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+  
+  /* Form Content */
+  .form-content-area {
+    margin-left: 250px;
+    padding: 40px;
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.03);
+  }
+  
+  .form-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+  }
+  
+  .teacher-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 420px;
+  }
+  
+  .teacher-form input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .teacher-form input[type="text"]:focus {
+    border-color: #4a9be9;
+    box-shadow: 0 0 0 3px rgba(74, 155, 233, 0.2);
+    outline: none;
+  }
+  
+  /* Button Row */
+  .form-action-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .icon-wrapper {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #b1b1b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #4a9be9;
+    background-color: #ffffff;
+  }
+  
+  .submit-teacher-btn {
+    background-color: #4a9be9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-teacher-btn:hover {
+    background-color: #3485d1;
+    transform: translateY(-1px);
+  }
+  
+  /* Output Area */
+  .teacher-output-area {
+    flex: 1;
+    padding: 40px 30px;
+    background-color: #f1f5f9;
+    margin-left: 250px;
+    min-height: 100vh;
+    border-left: 1px solid #e0e0e0;
+  }
+  
+  .teacher-output-area .form-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .teacher-card {
+    border: 1px solid #d0d0d0;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .teacher-card p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-wrapper {
+      flex-direction: column;
+    }
+  
+    .menu-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .form-content-area,
+    .teacher-output-area {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .teacher-form {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,117 @@
+.page-wrapper {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-content-area {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.dept-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.dept-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dept-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.dept-field label {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.dept-field input[type="text"],
+.dept-field input[type="number"] {
+  height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.dept-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dept-plus {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #b1b1b1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  background-color: white;
+  color: #000;
+}
+
+.dept-plus i {
+  font-weight: bold;
+}
+
+.dept-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #4a9be9;
+  color: #000;
+  padding: 10px 18px;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dept-button:hover {
+  background-color: #3190e7;
+}
+
+.teacher-output-area {
+  padding: 40px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.teacher-card {
+  background-color: #f0f0f0;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.teacher-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 18px;
+}

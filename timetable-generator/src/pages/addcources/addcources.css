@@ -1,0 +1,132 @@
+/* ─────────────────────────────────────────
+   src/pages/addcources.css
+   ───────────────────────────────────────── */
+
+   .page-wrapper {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* ───────── Form area ───────── */
+  .form-content-area {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .dept-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .dept-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dept-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dept-field label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+  
+  .dept-field input[type='text'],
+  .dept-field select {
+    height: 36px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dept-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .dept-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .dept-button {
+    background-color: #4a9be9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dept-button:hover {
+    background-color: #318fe5;
+  }
+  
+  /* ───────── List area ───────── */
+  .teacher-output-area {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .teacher-card {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  }
+  
+  .teacher-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* delete button */
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px;
+    transition: transform 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ───────── Responsive tweak ───────── */
+  @media (max-width: 768px) {
+    .form-content-area,
+    .teacher-output-area {
+      padding: 20px;
+    }
+  }
+  
